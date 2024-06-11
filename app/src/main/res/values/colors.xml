@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#00BCD4</color>
+    <color name="fdf">#74F0FF</color>
+    <color name="fend">#8BC34A</color>
+    <color name="bon">#D2E114</color>
+    <color name="tim">#9067DD</color>
+    <color name="hong">#E32A74</color>
+    <color name="red">#E31728</color>
+</resources>

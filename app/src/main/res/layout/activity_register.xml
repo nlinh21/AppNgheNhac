@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/imglogo"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/zing"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        app:layout_constraintRight_toRightOf="@id/imglogo"
+        app:layout_constraintLeft_toLeftOf="@id/imglogo"
+        app:layout_constraintTop_toBottomOf="@id/imglogo"
+        android:id="@+id/txtdangnhap"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imglogo"
+        android:text="ĐĂNG KÝ"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        app:layout_constraintRight_toRightOf="@id/txtdangnhap"
+        app:layout_constraintLeft_toLeftOf="@id/txtdangnhap"
+        app:layout_constraintTop_toBottomOf="@id/txtdangnhap"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edemail"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"
+
+        />
+
+    <EditText
+    android:layout_marginTop="20dp"
+    android:id="@+id/edpassword"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    app:layout_constraintRight_toRightOf="@id/edemail"
+    app:layout_constraintLeft_toLeftOf="@id/edemail"
+    app:layout_constraintTop_toBottomOf="@id/edemail"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edconfirmpass"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintRight_toRightOf="@id/edpassword"
+        app:layout_constraintLeft_toLeftOf="@id/edpassword"
+        app:layout_constraintTop_toBottomOf="@id/edpassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:text="Đăng ký"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintRight_toRightOf="@id/edconfirmpass"
+        app:layout_constraintLeft_toLeftOf="@id/edconfirmpass"
+        app:layout_constraintTop_toBottomOf="@id/edconfirmpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
